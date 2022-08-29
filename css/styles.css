@@ -14,7 +14,6 @@
     --portfolio-button-hf:#FFFFFF;
     --main-team:#F5F4FA;
     --main-team-foto:#FFFFFF;
-    --main-portfolio-foto:#FFFFFF;
     --logo-light:#FFFFFF;
     --footer-address:#FFFFFF;
     --footer-contacts:#FFFFFF99;
@@ -61,8 +60,6 @@ body{
     align-items: center;
     justify-content: space-between;
     column-gap: 50px;}
-.portfolio-header {
-    background-color:var(--portfolio-header);}
 .logo {
     text-decoration: none;
     color:var(--accent-color);
@@ -98,6 +95,8 @@ body{
 .header-list-link-contact:hover,
 .header-list-link-contact:focus{
     color: var(--accent-color);}
+.portfolio-header {
+    background-color: var(--portfolio-header);}
 /*main*/
 .title { 
     background-color:var(--title-background-color);
@@ -139,6 +138,8 @@ body{
 .button:hover,
 .button:focus {
     background-color: var(--button-hf);}
+.main-description-box {
+    padding-top: 94px;}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -150,14 +151,11 @@ body{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;}
-.main-description-box {
-    padding-top: 94px;
-    padding-bottom: 94px;}
-.main-job-description { 
-    width: 270px;}
 .main-description {
     display: flex;
     gap: 30px;}
+.main-job-description { 
+    width: 270px;}
 .main-title {
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -166,55 +164,66 @@ body{
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);}
-.main-images-box {
-    display: block;
-    max-width: 100%;
-    height: auto;}
-.main-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;}
 .main-list {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--secondary-text-color);}
-.main-team {
-    background-color: var(--main-team);}
-.main-team-foto {
-    background-color: var(--main-team-foto);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
-    margin-bottom: 94px;}
+    color: var(--secondary-text-color);
+    margin-bottom: 90px;}
+.main-images-box {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 94px;}
 .main-title-icon {
-    font-style: normal;font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
     text-align: center;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;}
+.main-list-comand {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-bottom: 90px;}
+.main-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;}
+.main-team {
+    background-color: var(--main-team);
+    padding-bottom: 94px;
     padding-top: 94px;}
 .main-group-icon {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;}
+.main-team-foto {
+    background-color: var(--main-team-foto);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;}
+.main-group-text {
+    margin-top: 30px;}
 .main-group-name {
-    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;}
 /*main-portfolio*/
 .portfolio-main-fon {
-    background-color: var(--portfolio-main-fon);}
+    padding-top: 94px;
+    padding-bottom: 94px;}
 .portfolio-main-button {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;}
+    margin-bottom: 50px;}
 .portfolio-button {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -227,40 +236,42 @@ body{
     background-color:var(--portfolio-button-bc);
     cursor: pointer;
     border-radius: 4px;
-    width: 112px;
-    height: 38px;}
+    height: 38px;
+    padding: 6px 22px;}
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--accent-color);
-    color: var(--portfolio-button-hf);}
+    color: var(--portfolio-button-hf);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);}
 .portfolio-display {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-bottom: 94px;}
+    gap: 30px;}
 .main-portfolio-foto {
-    width: 370px;
-    height: 404px;
-    background-color: var(--main-portfolio-foto);
+    width: 370px;}
+.portfolio-main-text {
+    padding: 20px 24px;
     border: 1px solid var(--main-portfolio-foto-border);}
+.main-portfolio-title {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;}
 .main-portfolio { 
     color:var(--secondary-text-color);
     font-style: normal;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;}
-.main-portfolio-title {
-    font-style: normal;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--primary-text-color);}
 /*footer*/
-.footer-style {
-    font-style: normal;}
-.footer-item { 
+.footer-item {
     background-color: #2F303A;
-    padding-top: 60px;} 
+    padding-top: 60px;
+    padding-bottom: 60px;}
 .logo-footer {
     text-decoration: none;
     color: var(--accent-color);
@@ -271,20 +282,21 @@ body{
     line-height: 1.19;}  
 .logo-light {
     color: var(--logo-light);}
+.footer-style {
+    font-style: normal;}
+.footer-cont-m {}
+.footer-cont-display {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;}
 .footer-address {
     text-decoration: none;
     color: var(--footer-address);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;}
-.footer-cont-display {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;}
-.footer-cont-m {
-    margin-top: 20px;
-    padding-bottom: 60px;}
+    letter-spacing: 0.03em;
+    margin-top: 20px;}
 .footer-address:hover,
 .footer-address:focus {
     color:var(--accent-color);} 
